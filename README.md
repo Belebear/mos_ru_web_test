@@ -67,7 +67,7 @@ clean ${TESTS} -Dremote=https://user1:1234@${REMOTE}/wd/hub -Dbrowser=${BROWSER}
 - BROWSER_SIZE - параметр для выбора разрешения, в котором будет открыт браузер
 - BROWSER_VERSION - параметр для выбора версии браузера
 - REMOTE - параметр для ввода адреса удаленного сервера, где будут выполняться тесты
-- TESTS - параметр отвечающий за запуск по тестовой модели
+- TEST - параметр отвечающий за запуск по тестовой модели
 - COMMENT - параметр, отвечающий за сообщение, которое будет отправлено в телеграм с отчетом
 
 ## Отчетность в [Allure](https://jenkins.autotests.cloud/job/38-belebear-rigla_project_lesson12/allure/) <img src="https://github.com/RomaQA/RomaQA/blob/main/media/icons/allure-Report-logo.svg" widht="40" height="40" />
