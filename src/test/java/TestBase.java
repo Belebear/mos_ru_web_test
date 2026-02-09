@@ -14,10 +14,11 @@ import java.util.Map;
 
 
 public class TestBase {
+    private final static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class);
 
     @BeforeAll
     static void setup() {
-        WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class);
+
         Configuration.baseUrl = "https://www.mos.ru";
         Configuration.pageLoadStrategy = "eager";
 

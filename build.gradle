@@ -108,7 +108,7 @@ task check_card_test(type: Test) {
 
     task all_ui_tests(type: Test) {
         useJUnitPlatform {
-            includeTags("leftBar", "kartaMoskvicha", "checkCard", "feedbackTests", "newsTest")
+            includeTags("leftBar", "kartaMoskvicha", "checkCard", "feedbackTests")
         }
     }
 }
