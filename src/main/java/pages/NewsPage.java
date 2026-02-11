@@ -65,14 +65,6 @@ public class NewsPage {
         return this;
     }
 
-    @Step("Выбор района")
-    public NewsPage selectArea(String value) {
-        areaDropdown.click();
-        selectCheckBox.findBy(text(value)).scrollIntoCenter().click();
-        clickAllNewsTitle.click();
-        return this;
-    }
-
     @Step("Клик на кнопку 'Подобрать'")
     public NewsPage clickApply() {
         applyButton.click();
@@ -81,7 +73,7 @@ public class NewsPage {
 
     @Step("Проверка отображения новости'")
     public NewsPage checkNews(String value) {
-        $("[alt='"+ value +"']").shouldBe(visible);
+        $("[alt='" + value + "']").shouldBe(visible);
         return this;
     }
 }

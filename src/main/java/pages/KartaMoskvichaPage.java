@@ -22,10 +22,10 @@ public class KartaMoskvichaPage {
     }
 
     @Step("Нажатие на кнопку 'Оформить карту'")
-    public KartaMoskvichaPage clickApplyCardButton() {
+    public KartaMoskvichaPage clickApplyCardButton(String expectedTitle) {
         applyCardButton.click();
         Selenide.switchTo().window(1);
-        $$("h1").findBy(text("Оформление карты москвича")).shouldBe(visible);
+        $$("h1").findBy(text(expectedTitle)).shouldBe(visible);
         return this;
     }
 }

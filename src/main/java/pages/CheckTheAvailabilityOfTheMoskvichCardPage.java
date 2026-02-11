@@ -68,9 +68,9 @@ public class CheckTheAvailabilityOfTheMoskvichCardPage {
     }
 
     @Step("Открытие модального окна 'Как найти номер заявления'")
-    public CheckTheAvailabilityOfTheMoskvichCardPage openModalOverlay() {
+    public CheckTheAvailabilityOfTheMoskvichCardPage openModalOverlay(String expectedTitle) {
         blankNotip.click();
-        $$("h2").findBy(text("Как найти номер заявления")).shouldBe(visible);
+        $$("h2").findBy(text(expectedTitle)).shouldBe(visible);
         return this;
     }
 

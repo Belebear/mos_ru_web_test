@@ -32,6 +32,6 @@ public class CheckTheAvailabilityOfTheMoskvichCardTest extends TestBase {
     @DisplayName("Проверка открытия модального окна 'Как найти номер заявления'")
     void openModalOverlayTest() {
         checkTheAvailabilityOfTheMoskvichCardPage.openPage(value)
-                .openModalOverlay();
+                .openModalOverlay("Как найти номер заявления");
     }
 }

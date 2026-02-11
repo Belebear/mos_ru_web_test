@@ -12,6 +12,6 @@ public class KartaMoskvichaTest extends TestBase {
     @DisplayName("Проверка кнопки 'Оформить карту'")
     void clickApplyCardButtonTest() {
         kartaMoskvichaPage.openKartaMoskvichaPage("О\u00A0карте москвича")
-                .clickApplyCardButton();
+                .clickApplyCardButton("Оформление карты москвича");
     }
 }
